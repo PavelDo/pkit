@@ -1,15 +1,15 @@
 ---
 name: troika-mode-1707
-description: The Troika working mode for multi-agent, multi-human epics — Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, status derived from draft PRs, shared gates, and a mode-routing intake. Use when starting an epic with more than one person, when deciding how to run a piece of work (think mode, solo swarm, Troika, worktree fan-out), or when coordination is drifting. Triggers - "troika mode", "troika-mode-1707", "1707 mode", "how should we run this", "mode routing", "who owns which block", "set up the epic", "kentaur", "we are stepping on each other", "coordinate the agents".
+description: The Troika 1707 working mode for multi-agent, multi-human epics — Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, status derived from draft PRs, shared gates, and a mode-routing intake. Use when starting an epic with more than one person, when deciding how to run a piece of work (think mode, solo swarm, Troika 1707, worktree fan-out), or when coordination is drifting. Triggers - "troika mode", "troika-mode-1707", "1707 mode", "how should we run this", "mode routing", "who owns which block", "set up the epic", "kentaur", "we are stepping on each other", "coordinate the agents".
 ---
 
-# Troika Mode v0.2
+# Troika 1707 Mode v0.2
 
 v0.1 = `keboola/agnes-the-ai-analyst#1707`, run by hand in Aug 2026.
 
 ## Origin (kept forever)
 
-Troika Mode v0.1 was `keboola/agnes-the-ai-analyst` issue **#1707**, run
+Troika 1707 Mode v0.1 was `keboola/agnes-the-ai-analyst` issue **#1707**, run
 2026-08-28 to 2026-08-31: Monika as PO briefing an autonomous Claude loop
 that ran under a maintainer's personal account (itself one of the lessons:
 agents need their own identity), roughly 30 PRs merged in three days.
@@ -30,7 +30,7 @@ identity, one accountability line. When a Kentaur commits, reviews, or claims a
 block, it does not matter which half did the typing — the human half owns the
 outcome. A Kentaur is the smallest unit that can be assigned work.
 
-**Troika.** At most **three Kentaurs per epic**. Three is not a style
+**Troika 1707.** At most **three Kentaurs per epic**. Three is not a style
 preference. Beyond three, the coordination surface grows faster than the work,
 the room fills with status talk, and blocks start colliding. If an epic needs
 more than three Kentaurs, it is more than one epic — split it.
@@ -142,7 +142,7 @@ against.
 
 **2. Solo, or with others?**
 Solo → solo swarm (the `swarm` skill, one Kentaur).
-Others → Troika, capped at three Kentaurs.
+Others → Troika 1707, capped at three Kentaurs.
 
 **3. Does this touch production or users?**
 Yes → full gates (CI + blind judge + human merge seat where rule 4 requires it).
