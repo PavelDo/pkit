@@ -1,0 +1,16 @@
+{
+  "name": "swarm",
+  "version": "0.1.0",
+  "description": "Orchestrated multi-agent implementation from a phased plan. Spawns worker agents in isolated git worktrees per phase, hands review to a fresh-context blind judge, retries up to three times, and stops at an open PR for a human merge seat.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "multi-agent",
+    "orchestration",
+    "worktree",
+    "planning"
+  ]
+}

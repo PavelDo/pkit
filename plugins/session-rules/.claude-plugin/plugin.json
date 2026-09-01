@@ -1,0 +1,16 @@
+{
+  "name": "session-rules",
+  "version": "0.1.0",
+  "description": "Hooks that surface the host repo's decision records into the session: a SessionStart digest of the latest records and a UserPromptSubmit re-emit of a short decisions/RULES.md. Silent no-op in repos without a decisions directory.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "hooks",
+    "context",
+    "decisions",
+    "rules"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "blind-judge",
+  "version": "0.1.0",
+  "description": "Fresh-context judging protocol: deterministic oracles run first, the judge never sees the implementer's transcript or authorship, one isolated judge per rubric dimension, and a consolidator that fails loudly on missing reports.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "review",
+    "judge",
+    "rubric",
+    "evaluation",
+    "gates"
+  ]
+}

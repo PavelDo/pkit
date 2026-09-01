@@ -1,0 +1,15 @@
+{
+  "name": "second-opinion",
+  "version": "0.1.0",
+  "description": "Get a second opinion from OpenAI (Codex), Google (Gemini) or Anthropic (Claude Code) CLIs. Single provider or multi-model consensus for architecture decisions and security review.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "code-review",
+    "multi-model",
+    "consensus"
+  ]
+}

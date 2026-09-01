@@ -1,0 +1,120 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pkit",
+  "version": "0.1.0",
+  "metadata": {
+    "description": "Pavel's personal Claude Code kit — deep research, vibecoding test discipline, swarm orchestration, external second opinions, and the Troika working mode with its decision log, blind judge, and session-rules hooks. Install individually."
+  },
+  "owner": {
+    "name": "Pavel Dolezal"
+  },
+  "plugins": [
+    {
+      "name": "research",
+      "source": "./plugins/research",
+      "description": "Deep research engine for market analysis, product strategy, competitive intelligence and thesis stress testing. Turns the agent into a skeptical investor and systems thinker rather than a summarizer.",
+      "version": "0.1.0",
+      "category": "research",
+      "keywords": [
+        "research",
+        "market-analysis",
+        "due-diligence",
+        "strategy"
+      ]
+    },
+    {
+      "name": "vibecoding",
+      "source": "./plugins/vibecoding",
+      "description": "Testing methodology and bug prevention for UI features built with AI. Enforces the seed-first, content-not-structure workflow that prevents green test suites over broken UIs.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "testing",
+        "e2e",
+        "playwright",
+        "ui",
+        "bug-prevention"
+      ]
+    },
+    {
+      "name": "swarm",
+      "source": "./plugins/swarm",
+      "description": "Orchestrated multi-agent implementation from a phased plan. Spawns worker agents in isolated git worktrees per phase, hands review to a fresh-context blind judge, retries up to three times, and stops at an open PR for a human merge seat.",
+      "version": "0.1.0",
+      "category": "orchestration",
+      "keywords": [
+        "multi-agent",
+        "orchestration",
+        "worktree",
+        "planning"
+      ]
+    },
+    {
+      "name": "second-opinion",
+      "source": "./plugins/second-opinion",
+      "description": "Get a second opinion from OpenAI (Codex), Google (Gemini) or Anthropic (Claude Code) CLIs. Single provider or multi-model consensus for architecture decisions and security review.",
+      "version": "0.1.0",
+      "category": "review",
+      "keywords": [
+        "code-review",
+        "multi-model",
+        "consensus"
+      ]
+    },
+    {
+      "name": "troika-mode",
+      "source": "./plugins/troika-mode",
+      "description": "The Troika working mode: Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, derived status from draft PRs, shared gates, mode-routing intake and model policy. Versioned, with an append-only lessons ledger.",
+      "version": "0.1.0",
+      "category": "orchestration",
+      "keywords": [
+        "working-mode",
+        "multi-agent",
+        "orchestration",
+        "gates",
+        "kentaur"
+      ]
+    },
+    {
+      "name": "decision-log",
+      "source": "./plugins/decision-log",
+      "description": "Append-only decision records in the host repo: PRD-D, ARCH-D, JUDGE-V, GATE-X, MODEL-R and TEST-D. Ships a pytest guard template that fails CI when an existing decision record is modified or deleted.",
+      "version": "0.1.0",
+      "category": "workflow",
+      "keywords": [
+        "decisions",
+        "adr",
+        "audit",
+        "append-only",
+        "governance"
+      ]
+    },
+    {
+      "name": "blind-judge",
+      "source": "./plugins/blind-judge",
+      "description": "Fresh-context judging protocol: deterministic oracles run first, the judge never sees the implementer's transcript or authorship, one isolated judge per rubric dimension, and a consolidator that fails loudly on missing reports.",
+      "version": "0.1.0",
+      "category": "review",
+      "keywords": [
+        "review",
+        "judge",
+        "rubric",
+        "evaluation",
+        "gates"
+      ]
+    },
+    {
+      "name": "session-rules",
+      "source": "./plugins/session-rules",
+      "description": "Hooks that surface the host repo's decision records into the session: a SessionStart digest of the latest records and a UserPromptSubmit re-emit of a short decisions/RULES.md. Silent no-op in repos without a decisions directory.",
+      "version": "0.1.0",
+      "category": "workflow",
+      "keywords": [
+        "hooks",
+        "context",
+        "decisions",
+        "rules"
+      ]
+    }
+  ]
+}

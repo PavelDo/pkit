@@ -1,0 +1,17 @@
+{
+  "name": "vibecoding",
+  "version": "0.1.0",
+  "description": "Testing methodology and bug prevention for UI features built with AI. Enforces the seed-first, content-not-structure workflow that prevents green test suites over broken UIs.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "testing",
+    "e2e",
+    "playwright",
+    "ui",
+    "bug-prevention"
+  ]
+}

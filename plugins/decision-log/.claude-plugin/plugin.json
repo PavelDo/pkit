@@ -1,0 +1,17 @@
+{
+  "name": "decision-log",
+  "version": "0.1.0",
+  "description": "Append-only decision records in the host repo: PRD-D, ARCH-D, JUDGE-V, GATE-X, MODEL-R and TEST-D. Ships a pytest guard template that fails CI when an existing decision record is modified or deleted.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "decisions",
+    "adr",
+    "audit",
+    "append-only",
+    "governance"
+  ]
+}

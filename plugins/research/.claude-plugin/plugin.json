@@ -1,0 +1,16 @@
+{
+  "name": "research",
+  "version": "0.1.0",
+  "description": "Deep research engine for market analysis, product strategy, competitive intelligence and thesis stress testing. Turns the agent into a skeptical investor and systems thinker rather than a summarizer.",
+  "author": {
+    "name": "Pavel Dolezal"
+  },
+  "homepage": "https://github.com/PavelDo/pkit",
+  "repository": "https://github.com/PavelDo/pkit",
+  "keywords": [
+    "research",
+    "market-analysis",
+    "due-diligence",
+    "strategy"
+  ]
+}
