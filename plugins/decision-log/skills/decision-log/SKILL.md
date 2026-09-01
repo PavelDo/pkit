@@ -215,6 +215,6 @@ explicit `git fetch origin <base>`.
 
 ## Related skills
 
-- `troika-mode` — the mode that produces PRD-D, GATE-X and MODEL-R records.
+- `troika-mode-1707` — the mode that produces PRD-D, GATE-X and MODEL-R records.
 - `blind-judge` — produces JUDGE-V verdicts.
 - `session-rules` — reads `decisions/` back into the session at start.

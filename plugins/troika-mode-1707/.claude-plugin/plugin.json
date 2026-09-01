@@ -1,5 +1,5 @@
 {
-  "name": "troika-mode",
+  "name": "troika-mode-1707",
   "version": "0.1.0",
   "description": "The Troika working mode: Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, derived status from draft PRs, shared gates, mode-routing intake and model policy. Versioned, with an append-only lessons ledger.",
   "author": {

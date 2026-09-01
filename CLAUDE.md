@@ -65,9 +65,9 @@ who has never read the skill would recognize their own request in it.
 Some sections are append-only, and the rule is enforced by convention here and
 by a test in host repos (`decision-log`'s guard template):
 
-- `troika-mode`'s **Origin** section — never edited, never removed. It is how
+- `troika-mode-1707`'s **Origin** section — never edited, never removed. It is how
   the mode remembers where it came from.
-- `troika-mode`'s **Lessons ledger** — delta-append only. Add entries at the
+- `troika-mode-1707`'s **Lessons ledger** — delta-append only. Add entries at the
   bottom. Never reword, reorder, or delete existing ones. Superseding an entry
   means writing a new entry that cites the old one.
 

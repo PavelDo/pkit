@@ -268,6 +268,6 @@ is significant enough to want the evidence later.
 ## Related skills
 
 - `swarm` — invokes this protocol as its review step.
-- `troika-mode` — makes blind-judge review a shared gate across Kentaurs.
+- `troika-mode-1707` — makes blind-judge review a shared gate across Kentaurs.
 - `decision-log` — JUDGE-V for verdicts, GATE-X for panel narrowing.
 - `second-opinion` — a different tool: an external model's opinion, not a gate.

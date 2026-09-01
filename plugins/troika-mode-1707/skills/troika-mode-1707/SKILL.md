@@ -1,6 +1,6 @@
 ---
-name: troika-mode
-description: The Troika working mode for multi-agent, multi-human epics — Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, status derived from draft PRs, shared gates, and a mode-routing intake. Use when starting an epic with more than one person, when deciding how to run a piece of work (think mode, solo swarm, Troika, worktree fan-out), or when coordination is drifting. Triggers - "troika mode", "how should we run this", "mode routing", "who owns which block", "set up the epic", "kentaur", "we are stepping on each other", "coordinate the agents".
+name: troika-mode-1707
+description: The Troika working mode for multi-agent, multi-human epics — Kentaurs (one human plus their agents), at most three per epic, the epic issue as the room, status derived from draft PRs, shared gates, and a mode-routing intake. Use when starting an epic with more than one person, when deciding how to run a piece of work (think mode, solo swarm, Troika, worktree fan-out), or when coordination is drifting. Triggers - "troika mode", "troika-mode-1707", "1707 mode", "how should we run this", "mode routing", "who owns which block", "set up the epic", "kentaur", "we are stepping on each other", "coordinate the agents".
 ---
 
 # Troika Mode v0.2

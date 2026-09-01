@@ -16,8 +16,8 @@ invoked in response. The eval runs the utterance against a session with the kit
 installed and asserts which skills were selected.
 
 ```yaml
-# evals/trigger-evals/troika-mode.yaml
-skill: troika-mode
+# evals/trigger-evals/troika-mode-1707.yaml
+skill: troika-mode-1707
 cases:
   - prompt: "three of us are going to work this epic, how do we not step on each other"
     expect: fire
@@ -53,7 +53,7 @@ irrelevant instructions into unrelated work, and the user uninstalls the
 plugin rather than debugging why the agent keeps talking about Kentaurs.
 
 Cross-skill collisions are the specific risk in this kit: `swarm`,
-`blind-judge` and `troika-mode` share vocabulary (review, orchestrate, phase,
+`blind-judge` and `troika-mode-1707` share vocabulary (review, orchestrate, phase,
 gate). Each one's negative set should include at least one phrase that belongs
 to a sibling.
 
@@ -63,9 +63,9 @@ to a sibling.
 |-----------------|-------------|--------------------|
 | "review this PR" | `blind-judge` | `second-opinion` |
 | "ask another model what it thinks" | `second-opinion` | `blind-judge` |
-| "run the phases in parallel" | `swarm` | `troika-mode` |
-| "how should we split this between the three of us" | `troika-mode` | `swarm` |
-| "write down why we picked Postgres" | `decision-log` | `troika-mode` |
+| "run the phases in parallel" | `swarm` | `troika-mode-1707` |
+| "how should we split this between the three of us" | `troika-mode-1707` | `swarm` |
+| "write down why we picked Postgres" | `decision-log` | `troika-mode-1707` |
 | "the tests pass but the page is blank" | `vibecoding` | `blind-judge` |
 
 ## Harness
@@ -86,7 +86,7 @@ one file per skill, named after the skill.
 | vibecoding | 0 | not started |
 | swarm | 0 | not started |
 | second-opinion | 0 | not started |
-| troika-mode | 0 | not started |
+| troika-mode-1707 | 0 | not started |
 | decision-log | 0 | not started |
 | blind-judge | 0 | not started |
 | session-rules | n/a | hooks plugin, no skill to trigger |

@@ -416,7 +416,7 @@ git -C "$MAIN_WT" remote prune origin
 
 - `blind-judge` — the review protocol invoked in Step 5, including per-dimension
   panels and scope-gated staffing.
-- `troika-mode` — when more than one human is involved, the swarm runs inside a
+- `troika-mode-1707` — when more than one human is involved, the swarm runs inside a
   Troika instead of solo.
 - `decision-log` — record the judge verdict (JUDGE-V) and any gate relaxation
   (GATE-X) as durable records.
