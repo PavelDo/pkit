@@ -20,6 +20,11 @@ For example:
 /plugin install blind-judge@pkit
 ```
 
+## The flow
+
+The end-to-end working mode the plugins implement, stage by stage (who does
+what, how, and what comes out): [docs/FLOW.md](docs/FLOW.md).
+
 ## Plugins
 
 | Plugin | What it does | Origin |
