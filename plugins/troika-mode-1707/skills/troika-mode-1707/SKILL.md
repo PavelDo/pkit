@@ -10,8 +10,9 @@ v0.1 = `keboola/agnes-the-ai-analyst#1707`, run by hand in Aug 2026.
 ## Origin (kept forever)
 
 Troika Mode v0.1 was `keboola/agnes-the-ai-analyst` issue **#1707**, run
-2026-08-28 to 2026-08-31: Monika Feigler as PO briefing an autonomous Claude
-loop operating under padak's identity, roughly 30 PRs merged in three days.
+2026-08-28 to 2026-08-31: Monika as PO briefing an autonomous Claude loop
+that ran under a maintainer's personal account (itself one of the lessons:
+agents need their own identity), roughly 30 PRs merged in three days.
 The five breakdowns that run taught are seeded in the Lessons ledger below.
 
 This section is append-protected in the same way the ledger is: **never edit or
