@@ -65,6 +65,33 @@ codex exec -m gpt-5.6-terra --output-schema /tmp/claude/schema.json \
 cat /tmp/claude/result.json
 ```
 
+Nested objects need the same treatment, which is the part people get wrong:
+
+```bash
+cat > /tmp/claude/nested_schema.json << 'EOF'
+{
+  "type": "object",
+  "properties": {
+    "summary": { "type": "string" },
+    "details": {
+      "type": "object",
+      "properties": {
+        "score": { "type": "string" },
+        "items": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["score", "items"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["summary", "details"],
+  "additionalProperties": false
+}
+EOF
+```
+
+Omit `additionalProperties: false` on the inner object and the call is rejected,
+with an error that points at the outer schema rather than the nested one.
+
 ### Gemini (Google)
 
 **WARNING (Aug 2026):** Gemini CLI no longer works with personal Google OAuth
@@ -126,6 +153,21 @@ security; the fast tier (Luna / flash / Haiku) is fine for quick code review.
 | claude | `-p "prompt"` | Non-interactive print mode (required) |
 | claude | `--output-format text\|json\|stream-json` | Output format |
 | claude | `--max-turns N` | Limit agentic turns |
+
+## Which provider for what
+
+| Use case | Codex (OpenAI) | Gemini (Google) | Claude Code (Anthropic) |
+|---|---|---|---|
+| Architecture review | `gpt-5.6-sol` | `gemini-3.1-pro-preview` or auto | `claude-opus-5` |
+| Security audit, deep | `gpt-5.6-sol` | auto-routing | `claude-opus-5` |
+| Fast code review | `gpt-5.6-luna` | `gemini-3-flash-preview` or auto | `claude-haiku-4-5-20251001` |
+| Balanced default | `gpt-5.6-terra` | auto-routing | `claude-sonnet-5` |
+| Structured output against a schema | **only provider that supports it** | no schema support | no schema support |
+| Consensus | run all three and compare | run all three and compare | run all three and compare |
+
+Codex is the only leg with real schema validation, so put it first when the
+answer has to be machine-readable. Gemini may be unavailable on personal OAuth
+(see the warning above) — a two-provider consensus is still worth more than one.
 
 ## Presenting Results
 
