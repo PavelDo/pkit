@@ -1,6 +1,6 @@
 ---
 name: decision-log
-description: Write append-only decision records into a decisions/ directory in the host repo - PRD-D for product decisions, ARCH-D for architecture with rejected alternatives and a named guard, JUDGE-V for review verdicts, GATE-X for gate exceptions with expiry, MODEL-R for model routing, TEST-D for deliberate test gaps. Use when a decision has just been made and should survive the session. Triggers - "record this decision", "write an ADR", "decision log", "log the verdict", "gate exception", "why did we choose", "document the tradeoff", "what did we decide about".
+description: Write append-only decision records into a decisions/ directory in the host repo - PRD-D for product decisions, ARCH-D for architecture with rejected alternatives and a named guard, JUDGE-V for review verdicts, GATE-X for gate exceptions with expiry, MODEL-R for model routing, TEST-D for deliberate test gaps. Also scaffolds the host repo on install - decisions/, RULES.md, the append-only guard test, and BACKLOG.md, the ideas place where ideas are parked as one entry each instead of being built. Use when a decision has just been made and should survive the session, or when setting pkit up in a repo. Triggers - "record this decision", "write an ADR", "decision log", "log the verdict", "gate exception", "why did we choose", "document the tradeoff", "what did we decide about", "park this idea", "add to the backlog", "set up pkit in this repo".
 ---
 
 # Decision Log
@@ -194,6 +194,29 @@ assertion.
 6. If the decision needs to bind future sessions, add the one-line positive
    rule to `CLAUDE.md` (and to `decisions/RULES.md` if the repo uses the
    `session-rules` hooks).
+
+## Repo setup — what a pkit installation scaffolds
+
+Installing this plugin into a repository means creating four things. Do all
+four; a partial install is how rules stop binding:
+
+1. `decisions/` — the records directory. Exists from the first record on.
+2. `decisions/RULES.md` — the short rule list (30 lines or fewer) that the
+   `session-rules` hooks re-emit into every session.
+3. `tests/test_decisions_append_only.py` — the guard test, copied per "The
+   guard test" below.
+4. `BACKLOG.md` — the ideas place, where an idea is recorded instead of
+   built:
+
+```bash
+cp "${CLAUDE_PLUGIN_ROOT}/skills/decision-log/templates/BACKLOG.md" BACKLOG.md
+```
+
+The backlog is the pressure valve that keeps scope honest. A mid-epic idea
+lands there as one entry and graduates by becoming a spec, an issue, or an
+epic work block — never by silently expanding the current change. When a
+session says "don't build it, put it in the ideas for later", this file is
+where it goes.
 
 ## The guard test
 

@@ -51,6 +51,13 @@ For example:
 /plugin install blind-judge@pkit
 ```
 
+Then, in any session inside the repo, say "set up pkit in this repo". That
+scaffolds the four host-repo artifacts (via `decision-log`): `decisions/`
+with `RULES.md` (re-emitted into every session by `session-rules`), the
+append-only guard test in `tests/`, and `BACKLOG.md` — the ideas place,
+where an idea is parked as one entry instead of being built mid-epic. Ideas
+for pkit itself go through [idea issues](../../issues/new?template=idea.yml).
+
 ## The flow
 
 The end-to-end working mode the plugins implement, stage by stage (who does
