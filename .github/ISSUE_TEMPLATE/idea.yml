@@ -1,0 +1,41 @@
+name: Idea
+description: Suggest an idea for pkit — a new plugin, a mode change, a gate, a lesson worth encoding
+title: "idea: <short name>"
+labels: ["idea"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: The idea in a few sentences. What would exist that does not exist today?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What broke, what dragged, or what would compound? A real moment from an epic beats an abstract argument.
+    validations:
+      required: true
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Where it lands
+      options:
+        - troika-mode-1707
+        - decision-log
+        - blind-judge
+        - session-rules
+        - swarm
+        - second-opinion
+        - research
+        - vibecoding
+        - new plugin
+        - docs / the mode itself
+    validations:
+      required: true
+  - type: input
+    id: origin
+    attributes:
+      label: Origin
+      description: Which epic, session, or Kentaur surfaced this (optional).
