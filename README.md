@@ -128,7 +128,15 @@ directories existing. Runs on every push and PR via
 Tier-1 (trigger evals — does the skill fire on the phrases it claims?) is
 specified in `evals/trigger-evals/README.md` and is a v1 gate, not a v0.1 one.
 
+Tier-2 (outcome evals — does the work come out better with the plugin than
+without it?) is specified in `evals/outcome-evals/README.md`. It runs the same
+task in two arms on a pinned commit, one worktree each, and reports pass rate,
+consistency, cost and time. Not a v1 gate — it is what a mature plugin has to
+clear before a refactor lands.
+
 ## Conventions
 
 See `CLAUDE.md` for the kit's own rules: one skill per plugin, version
-lockstep, the trigger-eval bar before v1, and which sections are append-only.
+lockstep, the trigger-eval bar before v1, the tool-response contract every
+shipped script follows (`docs/TOOL-CONTRACT.md`), and which sections are
+append-only.
