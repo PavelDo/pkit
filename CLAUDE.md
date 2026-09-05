@@ -76,6 +76,20 @@ the failure happened, and the failure then gets repeated. The ledger is
 context-collapse evidence, and evidence you are allowed to rewrite is not
 evidence.
 
+## Scripts follow the tool-response contract
+
+Every script a plugin ships writes into an agent's context, not a human's
+terminal. Output carries four fields in order: `status`, `summary`,
+`next_actions`, `artifacts`. `next_actions` is the one that changes agent
+behaviour and the one everybody omits — an error without it is a bug, because
+the agent then infers the fix and infers it wrong.
+
+Hooks keep their existing rule on top of this: exit 0 with valid JSON, always,
+and degrade to an empty payload rather than break the session. Validators are
+gates and may exit non-zero; hooks are not and may not.
+
+Full contract with worked examples: `docs/TOOL-CONTRACT.md`.
+
 ## Imported skills
 
 `research`, `vibecoding`, `second-opinion` and `swarm` came from elsewhere (see
